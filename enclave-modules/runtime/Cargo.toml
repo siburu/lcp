@@ -33,3 +33,5 @@ enclave-commands = { path = "../../modules/enclave-commands", default-features =
 store = { path = "../../modules/store", default-features = false, features = ["sgx"] }
 settings = { path = "../../modules/settings", default-features = false, features = ["sgx"] }
 crypto = { path = "../../modules/crypto", default-features = false, features = ["sgx"] }
+
+corda-ibc-enclave-light-client = { git = "https://github.com/datachainlab/corda-ibc-rs.git", default-features = false, features = ["sgx"] }

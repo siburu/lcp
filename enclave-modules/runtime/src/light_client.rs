@@ -1,12 +1,14 @@
+use corda_ibc_enclave_light_client;
 use lazy_static::lazy_static;
 use light_client::{LightClient, LightClientRegistry, LightClientSource};
 use std::boxed::Box;
-use tendermint_lc::register_implementations;
+use tendermint_lc;
 
 lazy_static! {
     pub static ref LIGHT_CLIENT_REGISTRY: LightClientRegistry = {
         let mut registry = LightClientRegistry::new();
-        register_implementations(&mut registry);
+        tendermint_lc::register_implementations(&mut registry);
+        corda_ibc_enclave_light_client::register_implementations(&mut registry);
         registry
     };
 }
