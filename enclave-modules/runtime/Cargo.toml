@@ -24,14 +24,14 @@ prost-types = { version = "0.10", default-features = false }
 bincode = { git = "https://github.com/bluele/bincode-sgx", branch = "serde" }
 derive_more = { version = "0.99.17", default-features = false, features = ["from", "display"] }
 
-enclave-utils = { path = "../utils" }
+enclave-utils = { git = "https://github.com/datachainlab/lcp.git" }
 
-handler = { path = "../../modules/handler", default-features = false, features = ["sgx"] }
-light-client = { path = "../../modules/light-client", default-features = false, features = ["sgx"] }
-tendermint-lc = { path = "../../modules/tendermint-lc", default-features = false, features = ["sgx"] }
-enclave-commands = { path = "../../modules/enclave-commands", default-features = false, features = ["sgx"] }
-store = { path = "../../modules/store", default-features = false, features = ["sgx"] }
-settings = { path = "../../modules/settings", default-features = false, features = ["sgx"] }
-crypto = { path = "../../modules/crypto", default-features = false, features = ["sgx"] }
+handler = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
+light-client = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
+tendermint-lc = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
+enclave-commands = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
+store = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
+settings = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
+crypto = { git = "https://github.com/datachainlab/lcp.git", default-features = false, features = ["sgx"] }
 
 corda-ibc-enclave-light-client = { git = "https://github.com/datachainlab/corda-ibc-rs.git", default-features = false, features = ["sgx"] }

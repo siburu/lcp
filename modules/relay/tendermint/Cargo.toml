@@ -14,4 +14,4 @@ ibc-proto = { git = "https://github.com/informalsystems/ibc-rs", rev = "e8c98d44
 anyhow = { version = "1.0.56" }
 thiserror = { version = "1.0.30" }
 tokio = { version = "1.0" }
-lcp-types = { path = "../../types" }
+lcp-types = { git = "https://github.com/datachainlab/lcp.git" }

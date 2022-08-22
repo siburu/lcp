@@ -19,9 +19,9 @@ anyhow-sgx = { package = "anyhow", rev = "sgx_1.1.3", git = "https://github.com/
 anyhow = { version = "1.0.56", optional = true }
 thiserror-sgx = { package = "thiserror", git = "https://github.com/mesalock-linux/thiserror-sgx.git", optional = true }
 thiserror = { version = "1.0.30", optional = true }
-commitments = { path = "../commitments", default-features = false }
-lcp-types = { path = "../types", default-features = false }
-attestation-report = { path = "../attestation-report", default-features = false }
+commitments = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
+lcp-types = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
+attestation-report = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
 
 [features]
 default = ["std"]

@@ -15,5 +15,5 @@ anyhow = { version = "1.0.56" }
 thiserror = { version = "1.0.30" }
 log = "0.4.8"
 
-lcp-types = { path = "../types" }
-enclave-commands = { path = "../enclave-commands" }
+lcp-types = { git = "https://github.com/datachainlab/lcp.git" }
+enclave-commands = { git = "https://github.com/datachainlab/lcp.git" }

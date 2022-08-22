@@ -31,6 +31,36 @@ exclude = [
     "proto-compiler"
 ]
 
+[patch."https://github.com/datachainlab/lcp.git"]
+lcp = { path = "app" }
+host = { path = "modules/host" }
+lcp-types = { path = "modules/types" }
+handler = { path = "modules/handler" }
+attestation-report = { path = "modules/attestation-report" }
+enclave-api = { path = "modules/enclave-api" }
+enclave-commands = { path = "modules/enclave-commands" }
+commitments = { path = "modules/commitments" }
+context = { path = "modules/context" }
+crypto = { path = "modules/crypto" }
+store = { path = "modules/store" }
+settings = { path = "modules/settings" }
+lcp-ibc-client = { path = "modules/ibc-client" }
+validation-context = { path = "modules/validation-context" }
+light-client = { path = "modules/light-client" }
+tendermint-lc = { path = "modules/tendermint-lc" }
+mock-lc = { path = "modules/mock-lc" }
+service = { path = "modules/service" }
+relay-tendermint = { path = "modules/relay/tendermint" }
+lcp-proto = { path = "proto" }
+integration-test = { path = "tests/integration" }
+nodes-runner = { path = "tools/nodes-runner" }
+
+enclave = { path = "enclave" }
+enclave-runtime = { path = "enclave-modules/runtime" }
+enclave-utils = { path = "enclave-modules/utils" }
+enclave-remote-attestation = { path = "enclave-modules/remote-attestation" }
+lcp-proto-compiler = { path = "proto-compiler" }
+
 [patch."https://github.com/apache/teaclave-sgx-sdk.git"]
 sgx_tstd = { version = "1.1.5", git = "https://github.com/apache/incubator-teaclave-sgx-sdk", branch = "master"}
 sgx_urts = { version = "1.1.5", git = "https://github.com/apache/incubator-teaclave-sgx-sdk", branch = "master"}

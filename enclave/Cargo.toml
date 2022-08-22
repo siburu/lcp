@@ -14,7 +14,7 @@ default = []
 [dependencies]
 sgx_types = { git = "https://github.com/apache/teaclave-sgx-sdk.git" }
 sgx_tstd = { git = "https://github.com/apache/teaclave-sgx-sdk.git", features = ["net"] }
-enclave-runtime = { path = "../enclave-modules/runtime" }
+enclave-runtime = { git = "https://github.com/datachainlab/lcp.git" }
 
 [patch."https://github.com/apache/teaclave-sgx-sdk.git"]
 sgx_tstd = { version = "1.1.5", git = "https://github.com/apache/incubator-teaclave-sgx-sdk", branch = "master"}

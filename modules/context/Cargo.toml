@@ -17,10 +17,10 @@ log = { version = "0.4.8", optional = true }
 bincode-sgx = { package = "bincode", git = "https://github.com/bluele/bincode-sgx", branch = "serde", optional = true }
 bincode = { version = "1.3", optional = true }
 
-lcp-types = { path = "../types", default-features = false }
-store = { path = "../store", default-features = false }
-crypto = { path = "../crypto", default-features = false }
-light-client = { path = "../light-client", default-features = false }
+lcp-types = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
+store = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
+crypto = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
+light-client = { git = "https://github.com/datachainlab/lcp.git", default-features = false }
 
 [features]
 default = ["std"]

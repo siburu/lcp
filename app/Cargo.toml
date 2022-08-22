@@ -17,10 +17,10 @@ dirs = "4.0"
 serde = { version = "1.0", default-features = false, features = ["alloc"] }
 serde_json = { version = "1.0", default-features = false, features = ["alloc"] }
 
-host = { path = "../modules/host" }
-service = { path = "../modules/service" }
-enclave-api = { path = "../modules/enclave-api" }
-enclave-commands = { path = "../modules/enclave-commands" }
+host = { git = "https://github.com/datachainlab/lcp.git" }
+service = { git = "https://github.com/datachainlab/lcp.git" }
+enclave-api = { git = "https://github.com/datachainlab/lcp.git" }
+enclave-commands = { git = "https://github.com/datachainlab/lcp.git" }
 
 [features]
 default = []

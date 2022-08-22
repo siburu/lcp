@@ -5302,3 +5302,15 @@ source = "git+https://github.com/apache/incubator-teaclave-sgx-sdk?branch=master
 name = "sgx_tcrypto_helper"
 version = "1.1.5"
 source = "git+https://github.com/apache/incubator-teaclave-sgx-sdk?branch=master#d2d339cbb005f676bb700059bd51dc689c025f6b"
+
+[[patch.unused]]
+name = "enclave"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "enclave-runtime"
+version = "0.1.0"
+
+[[patch.unused]]
+name = "lcp-proto-compiler"
+version = "0.1.0"
